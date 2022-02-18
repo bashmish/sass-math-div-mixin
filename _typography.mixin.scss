@@ -1,0 +1,30 @@
+@use "./headings.variables" as headings;
+@use "rem.mixin" as utils;
+@use "sass:map";
+
+@mixin attributes($map) {
+  @each $key, $value in $map {
+    // Font-sizes & Line-heights from DSM come without PX value
+    @if ($key == "font-size") or ($key == "line-height") {
+      #{$key}: utils.rem(#{$value + "px"});
+    } @else {
+      #{$key}: $value;
+    }
+  }
+}
+
+@mixin getHeadings($type) {
+  $getCategory: map.get(headings.$tokens, "headings");
+  $getType: map.get($getCategory, $type);
+  @include attributes($getType);
+}
+
+// Styling below is purely a mockup test. Ignore in production.
+$__headings: (1, 2);
+
+@each $nr in $__headings {
+  .crowny-h#{$nr} {
+    color: var(--colors-accents-gold);
+    @include getHeadings("h#{$nr}");
+  }
+}

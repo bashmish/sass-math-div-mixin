@@ -1,0 +1,11 @@
+{
+  "name": "sass-math-div-mixin",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "sass theme.scss output.css"
+  },
+  "dependencies": {
+    "sass": "1.49.8"
+  },
+  "devDependencies": {}
+}

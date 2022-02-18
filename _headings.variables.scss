@@ -1,0 +1,30 @@
+/**
+ * Do not edit directly
+ * Generated on Thu, 17 Feb 2022 12:45:08 GMT
+ */
+
+$headings-h1-font-family: CeraPro !default;
+$headings-h1-font-size: 64 !default;
+$headings-h1-font-style: normal !default;
+$headings-h1-font-weight: bold !default;
+$headings-h2-font-family: CeraPro !default;
+$headings-h2-font-size: 48 !default;
+$headings-h2-font-style: normal !default;
+$headings-h2-font-weight: bold !default;
+
+$tokens: (
+  "headings": (
+    "h1": (
+      "font-family": $headings-h1-font-family,
+      "font-size": $headings-h1-font-size,
+      "font-style": $headings-h1-font-style,
+      "font-weight": $headings-h1-font-weight,
+    ),
+    "h2": (
+      "font-family": $headings-h2-font-family,
+      "font-size": $headings-h2-font-size,
+      "font-style": $headings-h2-font-style,
+      "font-weight": $headings-h2-font-weight,
+    ),
+  ),
+);

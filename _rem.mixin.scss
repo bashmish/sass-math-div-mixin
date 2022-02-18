@@ -1,0 +1,7 @@
+@use "sass:math";
+
+@function rem($value) {
+  // $rem: math.div($value, 16px);
+  $rem: math.div($value, 16px);
+  @return #{$rem};
+}
